@@ -7,7 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Serodha </title>
 </head>
-<body>
+<body style="font-family: sans-serif; align-self: center;">
+    
     <nav class="navbar " style="display: flex; justify-content: space-between; box-shadow: 2px 1px 2px #eee;">
         <div style="display: flex ; flex-direction: column; align-items: center;">
             <div href="/">
@@ -24,15 +25,43 @@
         </div>
     </nav>
     <center>
-        <img src="https://zerodha.com/static/images/landing.png" width="80%" class="hero-img" alt="hero sction" >
-    </center>
+        <img src="https://zerodha.com/static/images/landing.png" width="80%" class="hero-img" alt="hero sction" style="margin-top: 10vh;">
     
-    <center>
+    
+    
         <h1>Invest in India's Largest Stock Market</h1>
-        <p>Online platform to invest in stocks, derivatives, mutual funds, and more</p>
-        <button style="color:white ; hover: #034086; font-size: large; background-color: #0078FF;">Get Started</button>
+        <p style="padding-bottom: 10px;">Online platform to invest in stocks, derivatives, mutual funds, and more</p>
+        <div style="color:white ; font-size: 20px; background-color: #0078FF; border-radius: 20px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; margin: 20px; display: inline; margin-top: 30px ;">Get Started</div>
 
-    </center>
+    
 
+    <div style="border-radius: 20px; padding: 10px; margin: 10px; display: flex;
+     justify-content: center; align-items: center; background-color: #2272cd;
+     height: 500px; width: 70vw; margin-top: 30vh; margin-bottom: 20%; flex-direction: column;">
+     <h3 style="font-size: 40px; color: white; padding-top: 0px; margin-top: 0px; font-weight: 900; ">Portfolio calculator</h3>
+        <div style="display: flex; flex-direction: row; justify-content:flex-end";>
+            <!-- Form   -->
+            <div>
+                <form id="myForm" style="display: flex; flex-direction: column; color: white; font-size: 20px;">
+                    <label>Princpile Amount?</label>
+                    <input type="number" id="principal" placeholder="XX XX XXX" style="padding: 10px 20px 10px 20px; border-radius: 10px;">
+                    <label>Interest rate?</label>
+                    <input type="number" id="interest" placeholder="RR" style="padding: 10px 20px 10px 20px; border-radius: 10px;"">
+                    <label>Number of years?</label>
+                    <input type="number" id="years" placeholder="YY" style="padding: 10px 20px 10px 20px; border-radius: 10px;"">
+                    <button type="button" onclick="estimate()" style="padding: 10px 10px 10px 10px; border-radius: 10px; color: white; background-color:cornflowerblue; margin-top: 10px;">Submit</button>
+
+                </form>
+            </div>
+            <hr style="color: #eee; margin-inline: 40px; height: 220px;">
+            <div style="max-width: 50%; color: white; background-color:cornflowerblue; padding: 20px; border-radius: 10px;">
+                <h2>Your portfolio <br/>might be worth 🤑 </h2>
+                <h1 id="result" style="font-size: 40px; font-style: italic;">₹ XX XX XXX</h1>
+            </div>
+        </div>
+        
+    </div>
+</center>
+<script src="script.js"></script>
 </body>
 </html>
