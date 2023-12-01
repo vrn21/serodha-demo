@@ -1,8 +1,4 @@
-
-
-
 function estimate(){
-    console.log("hello from console");
     document.getElementById("result").innerHTML = "₹ XX XX XXX"
     var principle = document.getElementById("principal").value;
     var rate = document.getElementById("interest").value;
